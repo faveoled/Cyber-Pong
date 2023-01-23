@@ -7,10 +7,10 @@
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/sweetalert.css" />
-    <script async src="main.js"></script>
-    <script src="sweetalert.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="./target/scala-3.2.1/scala-js-tutorial-fastopt.js"></script>
+    <!-- <script src="sweetalert.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script>
         $(window).load(function() {
             $(".se-pre-con").fadeOut("slow");;
@@ -50,8 +50,7 @@
     }
 </style>
 
-<body onload="startMovingBlocks()">
-
+<body>
     <div id="body">
         <div class="se-pre-con"></div>
 
@@ -63,7 +62,7 @@
 
                             <form name="firstPlayerPoints">
                                 <input class="in1" id="n1" type="text" name="firstPlayer" value="Player 1" onclick="this.select();" />
-                                <input id="in2" type="text" name="value_1" value="0" readonly="readonly" />
+                                <input id="in2" type="text" name="value_1" value="0" readonly />
                             </form>
 
                         </div>
@@ -74,8 +73,8 @@
                         <div id="Board">
 
                             <form name="fr">
-                                <input id="question" type="text" name="operandi" value="" readonly="readonly" />
-                                <input id="answer" type="text" name="result" value="" readonly="readonly" />
+                                <input id="question" type="text" name="operandi" value="" readonly />
+                                <input id="answer" type="text" name="result" value="" readonly />
                             </form>
 
                         </div>
@@ -117,7 +116,7 @@
                         <div id="Points_2">
                             <form name="secondPlayerPoints">
                                 <input class="in1" id="n2" type="text" name="secondPlayer" value="Player 2" onclick="this.select();" />
-                                <input id="in2" type="text" name="value_2" value="0" readonly="readonly" />
+                                <input id="in2" type="text" name="value_2" value="0" readonly />
                             </form>
                         </div>
                     </td>
@@ -144,10 +143,10 @@
         </div>
         <!--Page end -->
 
-        <a href="#" class="start_button" type="button" onclick="Start()">
+        <a href="#" class="start_button" type="button" onclick="CyberPongMain.Start()">
 	Start/Reset
 </a>
-        <a href="#" class="stop_button" type="button" onclick="Stop()">
+        <a href="#" class="stop_button" type="button" onclick="CyberPongMain.Stop()">
 	Pause
 </a>
 
