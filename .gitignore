@@ -1,43 +1,54 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# sbt target folders
+target/
 
-# Folder config file
-Desktop.ini
+# eclipse project files
+/.settings
+/.classpath
+/.project
+/.metals
+/.bsp
+/.vscode
+/.bloop
+# bloop and metals
+.bloop
+.bsp
+.metals
+project/metals.sbt
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# vs code
+.vscode
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# scala 3
+.tasty
 
-# Windows shortcuts
-*.lnk
+# sbt
+project/project/
+project/target/
+target/
 
-# =========================
-# Operating System Files
-# =========================
+# eclipse
+build/
+.classpath
+.project
+.settings
+.worksheet
+bin/
+.cache
 
-# OSX
-# =========================
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
+.idea
 
+# mac
 .DS_Store
-.AppleDouble
-.LSOverride
 
-# Thumbnails
-._*
+# other?
+.history
+.scala_dependencies
+.cache-main
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# general
+*.class
